@@ -1,0 +1,9 @@
+syntax = "proto3";
+package hotel_search.v1;
+
+import "hotel_search/v1/hotel_search_request.proto";
+import "hotel_search/v1/hotel_search_response.proto";
+
+service HotelSearchService {
+  rpc HotelSearch(HotelSearchRequest) returns (HotelSearchResponse);
+}

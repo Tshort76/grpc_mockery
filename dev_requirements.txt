@@ -1,0 +1,3 @@
+black           # formatter
+grpcio-tools    # protoc compiler
+ipykernel       # jupyter

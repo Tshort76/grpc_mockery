@@ -1,0 +1,31 @@
+syntax = "proto3";
+package hotel_search.v1;
+
+import "google/type/date.proto";
+import "google/type/money.proto";
+import "hotel_search/v1/common.proto";
+
+message HotelSearchRequest {
+  UserSession user_session = 1;
+  uint32 guest_count = 2;
+  google.type.Date check_in_date = 4;
+  google.type.Date check_out_date = 5;
+  string city_of_interest = 6;
+  optional google.type.Money max_nightly_price = 7;
+  repeated hotel_search.v1.Category categories = 8;
+  repeated hotel_search.v1.Amenity amenities = 9;
+  optional uint32 search_radius_km = 10;
+  repeated hotel_search.v1.Bed beds = 11;
+}
+
+message UserSession {
+  string session_id = 1;
+  Device user_device = 2;
+  optional string member_id = 3;
+}
+
+enum Device {
+    MOBILE_APP = 0;
+    MOBILE_BROWSER = 1;
+    DESKTOP_BROWSER = 2;
+}

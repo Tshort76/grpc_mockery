@@ -1,0 +1,123 @@
+{
+    "de305d54-75b4-431b-adb2-eb6b9e546014::2024:1:15": {
+        "request": {
+            "user_session": {
+                "session_id": "de305d54-75b4-431b-adb2-eb6b9e546014",
+                "member_id": "US-2094741771"
+            },
+            "guest_count": 2,
+            "check_in_date": {
+                "year": 2024,
+                "month": 1,
+                "day": 15
+            },
+            "check_out_date": {
+                "year": 2024,
+                "month": 1,
+                "day": 18
+            },
+            "city_of_interest": "Austin",
+            "max_nightly_price": {
+                "currency_code": "USD",
+                "units": 150,
+                "nanos": 0
+            },
+            "categories": [
+                "BUSINESS"
+            ],
+            "search_radius_km": 50
+        },
+        "response": {
+            "status_message": "Found 2 rooms",
+            "rooms": [
+                {
+                    "room_id": "-3001030371",
+                    "max_occupancy": 10,
+                    "nightly_rate": {
+                        "currency_code": "USD",
+                        "units": 130,
+                        "nanos": 0
+                    },
+                    "hotel": {
+                        "id": "-995797942",
+                        "location": {
+                            "latitude": -0.2185098936896921,
+                            "longitude": 0.5037237267210877
+                        },
+                        "star_rating": 4
+                    },
+                    "beds": [
+                        "KING",
+                        "FUTON"
+                    ],
+                    "amenities": [
+                        "FREE_PARKING"
+                    ]
+                },
+                {
+                    "room_id": "1480912964",
+                    "max_occupancy": 4,
+                    "nightly_rate": {
+                        "currency_code": "USD",
+                        "units": 140,
+                        "nanos": 0
+                    },
+                    "hotel": {
+                        "id": "-3431751907",
+                        "location": {
+                            "latitude": 0.2889110078833903,
+                            "longitude": 0.7680897301103635
+                        },
+                        "display_name": "Happy Hotels",
+                        "star_rating": 2
+                    },
+                    "beds": [
+                        "KING",
+                        "TRUNDLE"
+                    ],
+                    "category": "STANDARD"
+                }
+            ]
+        }
+    },
+    "af11112a-75b4-431b-adb2-eb6b9e546014::2024::2::15": {
+        "request": {
+            "user_session": {
+                "session_id": "af11112a-75b4-431b-adb2-eb6b9e546014",
+                "member_id": "US-2094741771"
+            },
+            "guest_count": 1,
+            "check_in_date": {
+                "year": 2024,
+                "month": 2,
+                "day": 15
+            },
+            "check_out_date": {
+                "year": 2024,
+                "month": 2,
+                "day": 18
+            },
+            "city_of_interest": "Las Vegas",
+            "max_nightly_price": {
+                "currency_code": "USD",
+                "units": 150,
+                "nanos": 0
+            },
+            "categories": [
+                "BUSINESS"
+            ],
+            "amenities": [
+                "FREE_BREAKFAST",
+                "FREE_PARKING"
+            ],
+            "search_radius_km": 50,
+            "beds": [
+                "KING"
+            ]
+        },
+        "response": {
+            "status_message": "Found 0 rooms",
+            "rooms": []
+        }
+    }
+}

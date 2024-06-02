@@ -1,0 +1,37 @@
+syntax = "proto3";
+package hotel_search.v1;
+
+import "google/type/latlng.proto";
+import "google/type/money.proto";
+import "hotel_search/v1/common.proto";
+
+message HotelSearchResponse {
+  StatusCode status_code = 1;
+  optional string status_message = 2;
+  repeated Room rooms = 3;
+}
+
+message Room {
+  int64 room_id = 1;
+  uint32 max_occupancy = 2;
+  google.type.Money nightly_rate = 3; 
+  Hotel hotel = 4;
+  repeated hotel_search.v1.Bed beds = 5;
+  repeated hotel_search.v1.Amenity amenities = 6;
+  hotel_search.v1.Category category = 7;
+}
+
+message Hotel {
+    int64 id = 1;
+    google.type.LatLng location = 2;
+    string display_name = 3;
+    uint32 star_rating = 4;
+  }
+  
+enum StatusCode {
+    SUCCESS = 0;
+    USER_ERROR = 1;
+    SERVER_ERROR = 2;
+}
+
+
